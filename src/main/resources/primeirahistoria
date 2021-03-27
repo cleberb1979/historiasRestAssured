@@ -1,0 +1,22 @@
+História 1:
+Eu, como PO
+Desejo validar o funcionamento de todos os recursos da API do seu Barriga
+Para
+Proporcionar aos clientes a máxima excelência de uso.
+
+
+
+Critérios de Regras e Aceite:
+
+Não deve acessar API sem token: GET/contas
+Deve incluir conta com sucesso: POST/signin (email/senha)
+                                POST/contas (nome da conta)
+Deve alterar conta com sucesso: PUT/contas/:id (nome da conta)
+Não deve incluir conta com nome repetido: POST/contas (nome da conta)
+Deve inserir movimentação com sucesso: POST/transacoes (conta_id; usuario_id; descricao; envolvido; tipo;
+                                                        data_transacao; data_pagamento; valor; status)
+Deve validar campos obrigatórios na movimentação: POST/transacoes
+Não deve cadastrar movimentação futura: POST/transacoes
+Não deve remover conta com movimentação: DELETE/contas:id
+Deve calcular saldo contas: GET/saldo
+Deve remover movimentação: DELETE/transacoes/:id
